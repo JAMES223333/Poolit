@@ -3,4 +3,5 @@ from .models import *
 
 # Register your models here.
 
-admin.site.register(HeroArea)
+admin.site.register (HeroArea)
+admin.site.register (Blog)

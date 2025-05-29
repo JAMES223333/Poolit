@@ -9,3 +9,11 @@ class HeroArea(models.Model):
     title = models.CharField(max_length=20 ,blank=True, null=True)
     note = models.CharField(max_length=100 ,blank=True, null=True)
     video = models.URLField(null=True,blank=True)
+
+class Blog(models.Model):
+    title = models.CharField(max_length=100)
+    description = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+
